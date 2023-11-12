@@ -1,0 +1,531 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+:root{
+    --primaryfont:'Ubuntu', sans-serif;
+    --secondaryfont:'Abril Fatface', serif;
+    --thirdfont:'Open Sans', sans-serif;
+    --primarycolor:#0f2f44;
+    --yellowcolor:#ffc712;
+    --purplecoler:#8484bf;
+
+}
+
+a{
+    text-decoration:none;
+
+}
+
+ul {
+    list-style:none;
+
+}
+
+.container{
+    width:1170px;
+    margin:auto
+
+}
+
+.row{
+    display:flex;
+    flex-wrap:wrap;
+
+}
+
+.align-center{
+    align-items:center;
+
+}
+
+body{
+    font-family:'Ubuntu', sans-serif;
+
+}
+
+.paragraph{
+    font-weight:300;
+    font-size:14px;
+    color:var(--primarycolor);
+
+}
+
+.heading{
+    font-family:var(--secondaryfont);
+    font-weight:400;
+    font-size:32px;
+    color:var(--primarycolor);
+
+}
+
+.Button{
+    font-weight:500;
+    font-size:20px;
+    color:var(--primarycolor);
+    padding:15px 20px;
+    background-color:#ffffff;
+    display:inline-block;
+    border-radius:10px;
+    box-shadow: 2px 2px 5px gray;
+   
+
+}
+
+.Button:hover{
+    background-color:var(--yellowcolor);
+    transition:0.5s;
+
+}
+ 
+/* Header */
+
+Header{
+    background-color:var(--primarycolor);
+    color:white;
+    padding:19px 0px;
+
+}
+
+Header .welcome,
+Header .opening
+{
+    width:50%;
+
+}
+
+Header .opening{
+    text-align:right;
+
+}
+
+/* Header end */
+
+/* navber  */
+nav .logo{
+    width:30%;
+
+}
+
+nav .menu{
+    width:70%;
+    text-align:right;
+
+}
+
+nav .menu ul li{
+    display:inline-block;
+
+}
+
+nav .menu ul li a{
+    font-weight:500;
+    font-size:16px;
+    padding:40px 19px;
+    display:block;
+    color:#222222;
+
+}
+
+nav .menu ul li span{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border:1px solid #ececec;
+    display:inline-block;
+    text-align:center;
+    line-height:40px;
+
+}
+
+nav .menu ul li:hover span{
+    color:var(--yellowcolor);
+    background-color:var(--primarycolor)
+
+}
+
+nav .menu ul li:hover a{
+    color:var(--yellowcolor);
+    background-color:#fff9e6;
+    transition:0.03s;
+
+}
+
+/* navber ends */
+
+/* banner */
+#banner{
+    background-image:url(../images/Banner.jpg);
+    height:600px;
+    background-position:center;
+    background-size:cover;
+   
+}
+
+.bannercontent{
+    width:50%;
+    padding:140px 0px;
+
+}
+
+.bannercontent h4{
+    font-weight:300;
+    font-size:50px;
+    color:var(--primarycolor);
+}
+
+.bannercontent h1{
+    font-family:var(--secondaryfont);
+    font-weight:400;
+    font-size:80px;
+    color:var(--primarycolor);
+    line-height:70px;
+
+}
+
+.bannercontent h5{   
+    font-weight:400;
+    font-size:32px;
+    color:var(--purplecoler);
+    letter-spacing:14px;
+
+}
+
+.bannercontent p{
+    font-family:var(--thirdfont);
+    font-weight:400;
+    font-size:14px;
+    color:#444444;
+    margin:30px 0px;
+
+}
+
+.buttonshape{
+    font-weight:500;
+    font-size:20px;
+    color:#ffffff;
+    padding:15px 20px;
+    background-color:var(--purplecoler);
+    display:inline-block;
+    border-radius:10px;
+    box-shadow:2px 2px 5px gray;
+
+}
+
+.bannercontent a:hover{
+    color:var(--primarycolor);
+    transition:0.5s;
+}
+
+.bannercontent span{    
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:1px solid #ececec;
+    display:inline-block;
+    text-align:center;
+    line-height:50px;
+    color:var(--purplecoler);
+    background-color:#ffffff;
+
+}
+
+.bannercontent span:hover{
+    background-color:var(--primarycolor);
+    transition:0.5s;
+
+}
+
+.bannercontent .play{
+   display: inline-block;
+   padding:0px 15px;
+    
+}
+
+/* banner end */
+
+/* about us */
+#About_us{
+    margin:100px 0px;
+
+}
+
+.abouttext{
+    width:50%;
+}
+
+.aboutimage{
+    width:50%;
+}
+
+.abouttext .loremipsum{
+    font-family:var(--thirdfont);
+    font-weight:400;
+    font-size:16px;
+    color:var(--primarycolor);
+    margin:20px 0px;
+
+}
+
+.abouttext .loremipsum span{
+   line-height:50px;
+   margin-left:28px;
+   display:inline-block;
+
+}
+
+.abouttext .Button{
+    display:inline-block;
+    margin:0px 10px;
+
+}
+
+/* about us end */
+
+/* Our skill */
+#Our_skills{
+    margin-bottom:80px;
+
+}
+
+.skillimage{
+    width:50%;
+
+}
+
+.skillimage img{
+    width:650px;
+    height:455px;
+
+}
+
+.skillcontent img{
+    width:500px;
+    height:340px;
+
+}
+
+.skillcontent{
+    width:50%;
+    text-align:right;
+
+}
+
+.skillcontent p{
+    font-family:var(--thirdfont);
+    font-weight:400;
+    font-size:16px;
+    color:var(--primarycolor);
+    margin-top:25px;
+
+}
+
+/* Our skill end */
+
+/* Our services */
+
+#Our_services{
+    background-color:#f5f5f5;
+    height:424px;
+    
+}
+
+.servicecontent{
+    text-align:center;
+    padding:60px 0px;
+    
+}
+
+.row .servicecard{
+    width:30%;
+    margin:0px 15px;
+    background-color:#e9e9e9;
+    border-radius:5px;
+    width:30%;
+    box-shadow:2px 3px 5px gray;
+    margin:0px 15px;
+    position:relative;
+    
+}
+  
+.servicecard h4{
+    font-weight:500;
+    font-size:20px;
+    color:#222222;
+
+}
+
+.servicecard p{
+    font-family:var(--thirdfont);
+    font-weight:400;
+    font-size:14px;
+    color:#444444;
+
+}
+
+.servicecard .icon{
+    width:20%;
+    text-align:center;
+   
+
+}
+
+.servicecard .text{
+    width:80%;
+    background-color:#eeeeee;
+    padding:28px 20px;
+    
+}
+
+.servicecard .text p{
+    margin-top:20px;
+   
+}
+
+.servicecard .overlay{
+    position:absolute;
+    inset:0;
+    background-color:var(--primarycolor);
+    text-align:center;
+    padding-top:30px;
+    line-height:35px;
+    border-radius:5px;
+    transform:scale(0);
+}
+
+.servicecard:hover .overlay{
+    transform: scale(1);
+    transition:0.5s;
+
+}
+
+.servicecard .overlay h4{
+    color:#ffffff;
+
+}
+
+.servicecard .overlay a{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background-color:var(--yellowcolor);
+    display:block;
+    color:#222222;
+    line-height:40px;
+    position:absolute;
+    bottom:-20px;
+    left:30%;
+    opacity:0;
+    transform:translateX(-50%);
+
+}
+
+.servicecard:hover .overlay a{
+    left:50%;
+    opacity:1;
+    transition:0.5s;
+    transition-delay:0.5s;
+
+
+}
+
+/* Our services end */
+
+/* Our portfolio */
+
+#Our_Portfolio{
+    margin:80px 0px;
+
+}
+
+.Portfoliocontent{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.row .Portfoliocard{
+    width:30%;
+    margin:0px 19px;
+    
+}
+
+.Portfoliocard .arrowleft{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:1px solid #ececec;  
+    display:inline-block;
+    text-align:center;
+    line-height:50px;
+    color:#222222;
+    background-color:#ffffff;
+    position: absolute;
+    display: block;
+    top:46%;
+}
+
+.arrowleft{
+    left:-25px;
+}
+
+.Portfoliocard .arrowright{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    border:1px solid #ececec;   
+    display:inline-block;
+    text-align:center;
+    line-height:50px;
+    color:#222222;
+    background-color:#ffffff;
+    position: absolute;
+    display: block;
+    top:46%;
+
+}
+
+.arrowright{
+    right:-25px;
+}
+
+.Portfoliocard{
+    position:relative;
+}
+
+.arrowleft:hover{
+    background-color:var(--yellowcolor);
+    transition:0.5s;
+
+}
+
+.arrowright:hover{
+    background-color:var(--yellowcolor);
+    transition:0.5s;
+}
+
+.Portfoliocard .overlay h3{
+    position:absolute;
+    inset:0;   
+    top:345px;
+    background-color:#ffffff;
+    text-align:center;
+    padding:28px 0px;
+    opacity:0;
+    visibility:hidden;
+    font-weight:500;
+    font-size:20px;
+    color:#0f2f44;
+    margin-top:78px;
+}
+
+.Portfoliocard:hover .overlay h3{
+    opacity:1;
+    visibility:visible;
+    margin-top:0px;
+    transition:0.5s;
+
+}
+/* Our portfolio end */
